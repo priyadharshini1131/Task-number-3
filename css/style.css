@@ -1,0 +1,65 @@
+/* Basic styling for body and container */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Styling the game board */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* 4 columns for the cards */
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for each card */
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+/* Flip effect */
+.card.flipped {
+  background-color: #ecf0f1;
+  color: #3498db;
+  transform: rotateY(180deg);
+}
+
+/* Styling the reset button */
+button {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
